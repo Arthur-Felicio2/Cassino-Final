@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace MicodaSorte
 {
@@ -28,6 +29,12 @@ namespace MicodaSorte
                 roleta[i] = r.Next(0, 10);
                 Update(i);
             }
+            btSpin.Text = "&Girar";
+            btSpin.TabIndex = 0;
+
+            chbWins.Text = "&Vitórias";
+            chbWins.TabIndex = 1;
+
         }
 
         void Update(int i)
